@@ -1,0 +1,143 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 24px;
+    color: #4a90e2;
+}
+
+/* Tela inicial */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#student-name {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Tela do quiz */
+#quiz-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question-container {
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.question h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    margin: 5px 0;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+#timer {
+    font-size: 16px;
+    color: #ff6f61;
+    margin-top: 15px;
+}
+
+/* Tela de agradecimento */
+#thank-you-screen h2 {
+    font-size: 24px;
+    color: #4a90e2;
+}
+
+#thank-you-screen p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Tela de rankings */
+#rankings-container {
+    text-align: left;
+    padding: 15px;
+}
+
+#rankings-container h2 {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+#rankings-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+
+#rankings-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#rankings-content ul li {
+    margin-bottom: 5px;
+}
+
+/* Feedback de erro */
+#feedback {
+    color: #ff6f61;
+    font-size: 14px;
+    margin-top: 10px;
+}

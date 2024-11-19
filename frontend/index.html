@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Gameficado de Quiz com Redis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,"> <!-- Código do favicon para evitar o erro 404 -->
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Gameficado de Quiz com Redis</h1>
+        
+        <!-- Tela de início -->
+        <div id="start-screen">
+            <label for="student-name">Digite seu nome ou apelido:</label>
+            <input type="text" id="student-name" placeholder="Seu nome" required>
+            <button id="start-quiz-button" aria-label="Iniciar Quiz">Iniciar Quiz</button>
+        </div>
+        
+        <!-- Tela do quiz -->
+        <div id="quiz-screen" style="display: none;">
+            <div id="question-container"></div>
+            <div id="timer">Tempo restante: <span id="time-left">20</span> segundos</div>
+            <button id="submit-answer-button" aria-label="Enviar Resposta">Enviar Resposta</button>
+            <button id="next-question-button" aria-label="Próxima Pergunta">Próxima Pergunta</button>
+        </div>
+        
+        <!-- Tela de agradecimento e botão para ranking -->
+        <div id="thank-you-screen" style="display: none;">
+            <h2>Obrigado por participar!</h2>
+            <p>Você concluiu o quiz.</p>
+            <button id="show-rankings-button" aria-label="Ver Ranking">Ver Ranking</button>
+        </div>
+
+        <!-- Tela de rankings -->
+        <div id="rankings-container" style="display: none;">
+            <h2>Rankings</h2>
+            <div id="rankings-content"></div>
+        </div>
+
+        <!-- Feedback de erro -->
+        <div id="feedback" style="color: red; display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
